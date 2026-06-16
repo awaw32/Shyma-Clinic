@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Custom Palette for Dr. Shyma Nutrition Clinic - Wooden Brown & White Theme */
+  --color-clinic-primary: #5c4033; /* Dark Wood / Walnut Brown */
+  --color-clinic-primary-light: #7c5a45; /* Medium wood / Oak */
+  --color-clinic-secondary: #8c6239; /* Rich brown wood / warm mahogany */
+  --color-clinic-secondary-light: #b08257; /* Light sand wooden texture */
+  --color-clinic-bg: #f7f5f0; /* Soft creamy warm white */
+  --color-clinic-surface: #ffffff; /* Clean pure milk-white */
+  --color-clinic-accent: #a07855; /* Light brown camel leather / wood gold */
+  --color-clinic-charcoal: #2d1e15; /* Dark bark cocoa charcoal */
+  --color-clinic-pink: #f2ede4; /* Light wooden powder / soft organic linen */
+  --color-clinic-sage: #e1e6df; /* Organic natural leaf green */
+}
+
+body {
+  background-color: var(--color-clinic-bg);
+  color: var(--color-clinic-charcoal);
+  font-family: var(--font-sans);
+  direction: rtl; /* Set default Arabic language direction */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-clinic-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #d4c3be;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-clinic-primary);
+}
+
+/* Keyframes for soft pulse/floating elements */
+@keyframes soft-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: soft-float 4s ease-in-out infinite;
+}
+
+/* Glassmorphism card utility */
+.glass-card {
+  background: rgba(255, 253, 252, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(114, 86, 76, 0.08);
+}
+

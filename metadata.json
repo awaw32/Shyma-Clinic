@@ -1,0 +1,10 @@
+{
+  "name": "Shyma Nutrition Clinic",
+  "description": "تطبيق ويب متكامل واحترافي لعيادة الدكتورة شيماء للتغذية العلاجية، يضم لوحة تحكم المرضى، متتبع الوزن والشوربات والمياه، الخطط الغذائية، الرياضة، متجر المنتجات الصحية، ولوحة تحكم الطبيبة.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
